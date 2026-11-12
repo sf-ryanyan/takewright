@@ -7,7 +7,7 @@
 
 `Claude Skill` · `Any provider` · `Cloud · Local GPU · Manual` · `MIT`
 
-[English](#english) · [中文](#中文)
+[📦 Repository](https://github.com/sf-ryanyan/takewright) · [⬇️ Releases](https://github.com/sf-ryanyan/takewright/releases) · [English](#english) · [中文](#中文)
 
 </div>
 
@@ -54,7 +54,12 @@ AI video models are powerful, but using them is expensive and frustrating:
 
 ## 🚀 How to use
 
-1. **Install the skill** — copy the `takewright` folder into your Claude skills folder (Claude Code: `~/.claude/skills/takewright`), or add it through your agent's skill manager. It also works with any agent that reads the `SKILL.md` format.
+1. **Install the skill** (pick one):
+   - **Git (macOS / Linux):** `git clone https://github.com/sf-ryanyan/takewright.git ~/.claude/skills/takewright`
+   - **Git (Windows PowerShell):** `git clone https://github.com/sf-ryanyan/takewright.git "$env:USERPROFILE\.claude\skills\takewright"`
+   - **ZIP:** download `takewright.zip` from [Releases](https://github.com/sf-ryanyan/takewright/releases) and unzip it so that `SKILL.md` sits directly inside `~/.claude/skills/takewright/`.
+   - Restart Claude Code (or the Claude desktop app) afterwards. Takewright also works with any agent that reads the `SKILL.md` format — place the folder in that agent's skills directory.
+   - **Update later:** `git -C ~/.claude/skills/takewright pull`
 2. **Install ffmpeg** — needed for quality checks and editing (Windows: `winget install Gyan.FFmpeg` · macOS: `brew install ffmpeg` · Linux: `sudo apt install ffmpeg`). Python 3.8+ runs the helper scripts.
 3. **Ask for a video** — for example: *"Make a 20-second vertical video of a modern kitchen at golden hour for Instagram."* The first time, Takewright runs the setup wizard.
 4. **Review and approve** — you see the shot list and one confirmation card with the estimated cost before anything is generated.
@@ -136,7 +141,12 @@ Built by **Ryan Yan, a data analyst**, to make AI video production predictable f
 
 ## 🚀 怎么用
 
-1. **安装 skill**：把 `takewright` 文件夹复制到 Claude 的 skills 文件夹（Claude Code：`~/.claude/skills/takewright`），或者用你的 agent 的 skill 管理工具添加。也支持其他能读取 `SKILL.md` 格式的 agent。
+1. **安装 skill**（任选一种）：
+   - **Git（macOS / Linux）：**`git clone https://github.com/sf-ryanyan/takewright.git ~/.claude/skills/takewright`
+   - **Git（Windows PowerShell）：**`git clone https://github.com/sf-ryanyan/takewright.git "$env:USERPROFILE\.claude\skills\takewright"`
+   - **ZIP 下载：**到 [Releases](https://github.com/sf-ryanyan/takewright/releases) 下载 `takewright.zip`，解压后确保 `SKILL.md` 直接位于 `~/.claude/skills/takewright/` 文件夹里
+   - 安装后重启 Claude Code（或 Claude 桌面版）。也支持其他能读取 `SKILL.md` 格式的 agent，放到对应的 skills 文件夹即可
+   - **以后更新：**`git -C ~/.claude/skills/takewright pull`
 2. **安装 ffmpeg**：质检和剪辑需要用到（Windows：`winget install Gyan.FFmpeg`，macOS：`brew install ffmpeg`，Linux：`sudo apt install ffmpeg`）。辅助脚本需要 Python 3.8 以上。
 3. **直接说你要什么视频**，比如："帮我做一个 20 秒的竖屏视频，现代风格厨房，黄金时段光线，发 Instagram。"第一次使用时会自动运行设置向导。
 4. **确认方案**：生成之前，你会先看到分镜和一张写明预估费用的确认单。
